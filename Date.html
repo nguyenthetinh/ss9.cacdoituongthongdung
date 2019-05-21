@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Date=function (hous,year) {
+        this.year=year;
+        this.hous=year;
+        this.getYear=function (date) {
+             date.yearHT-this.year;
+             console.log("toi da song: "+(date.yearHT-this.year)+ "nam")
+        };
+        this.getMonth=function (date) {
+            (date.yearHT-this.year)*12;
+            console.log("toi da song: "+(date.yearHT-this.year)*12+ "thang")
+        };
+        this.getDay=function (date) {
+            (date.yearHT-this.year)*360;
+            console.log("toi da song: "+(date.yearHT-this.year)*360 + " ngay")
+        };
+        this.getHours=function (date) {
+            (date.yearHT-this.year)*
+            console.log("toi da song: "+(date.yearHT-this.year)+" gio")
+        }
+
+    };
+    let Datehientai=function (hous,year) {
+        this.yearHT=year;
+        this.housHT=hous;
+    }
+    let date=new Date(6,1995);
+    let date1=new Datehientai(6,2019);
+    date.getYear(date1);
+    date.getMonth(date1);
+    date.getDay(date1);
+</script>
+</body>
+</html>
